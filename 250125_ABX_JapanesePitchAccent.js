@@ -174,8 +174,8 @@ var axb_prac_response = {
         ＃＃＃＃ 
         </p>
         <p style="width: 100%"> 
-        2番の音声は1番の音声とより似ていれば<span style="background-color: yellow;">[ A ]キー</span>を、
-        3番の音声とより似ていれば <span style="background-color: yellow;">[ B ]キー</span>を<u>押してください</u>。
+        2番目の音声は1番目の音声とより似ていれば<span style="background-color: yellow;">[ A ]キー</span>を、
+        3番目の音声とより似ていれば <span style="background-color: yellow;">[ B ]キー</span>を<u>押してください</u>。
         </p>`,
     choices: ['a', 'b'],
     data: {
@@ -203,8 +203,8 @@ var axb_response = {
         ＃＃＃＃ 
         </p>
         <p style="width: 100%"> 
-        2番の音声は1番の音声と似たアクセントであれば<span style="background-color: yellow;">[ A ]キー</span>を、
-        3番の音声と似たアクセントであれば <span style="background-color: yellow;">[ B ]キー</span>を<u>押してください</u>。
+        2番目の音声が1番目の音声とより似ていれば<span style="background-color: yellow;">[ A ]キー</span>を、
+        3番目の音声とより似ていれば [ B ]キーを押してください。 <span style="background-color: yellow;">[ B ]キー</span>を<u>押してください</u>。
         </p>`,
     choices: ['a', 'b'],
     data: {
@@ -311,7 +311,7 @@ var after_break = {
 // 保存实验数据
 var save_local_trial = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: `<p>実験結果を保存するように、以下のボタンをクリックしてください。</p>`,
+    stimulus: `<p>以下のボタンをクリックして実験結果を保存してください。</p>`,
     choices: ['保存'],
     on_finish: function() {
         const timestamp = new Date().toISOString().replace(/[:.-]/g, '_');
@@ -329,11 +329,9 @@ var ending = {
     実験はこれで終了です。
     </h1>
     <p> 
-    お手数をおかけしますが、実験完了後、実験実施者にその旨をご連絡いただきますよう、お願いいたします。
-
-    また、ご質問がございましたら、いつでもご連絡ください。
-    
     ファイルを保存したと確認できたら、下のボタンを押していただいて、実験を終わります。
+    また、ご質問などがございましたら、いつでもご連絡ください。
+    
     </p>`,
     choices:["ファイルを保存しました。実験を終わります。"],
     response_ends_trial: true
